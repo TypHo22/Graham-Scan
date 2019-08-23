@@ -40,9 +40,6 @@ k = 1;% Increment
 cas = 0; % case 
 
 while(noMoreRemove == false ) %stay in while until no points need to be removed anymore
-    if(height(KonvexHull)==16&& k==15)
-       m=3; 
-    end
     if(k<=height(KonvexHull)-2)%standard case far away from the vector end
         P1 = [KonvexHull{k,3},KonvexHull{k,4}];
         P2 = [KonvexHull{k+1,3},KonvexHull{k+1,4}];
