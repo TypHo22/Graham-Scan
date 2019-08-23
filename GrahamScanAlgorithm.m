@@ -64,8 +64,6 @@ while(noMoreRemove == false ) %stay in while until no points need to be removed 
     elseif(polyTest < 0 && cas == 1)
         KonvexHull(1,:) = []; %remove
         k = 0;
-    elseif(polyTest == 0)
-        zerCount = zerCount + 1;
     elseif(k==height(KonvexHull)&&polyTest>0)     
             noMoreRemove = true;
             break;
